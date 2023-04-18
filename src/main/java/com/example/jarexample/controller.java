@@ -18,8 +18,14 @@ public class controller {
         return name;
     }
 
+
     @GetMapping("abc/{abc}")
     public String addNewMethod(@PathVariable String abc) {
         return "shams UL Hassan Jafary " + abc;
+
+    @GetMapping("xyz/{xyz}")
+    public String xyz(@PathVariable String xyz) {
+        return "Hassan" + xyz;
+
     }
 }
