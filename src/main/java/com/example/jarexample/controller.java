@@ -17,4 +17,9 @@ public class controller {
 
         return name;
     }
+
+    @GetMapping("xyz/{xyz}")
+    public String xyz(@PathVariable String xyz) {
+        return "Hassan" + xyz;
+    }
 }
